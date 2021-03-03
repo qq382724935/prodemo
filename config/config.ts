@@ -2,7 +2,7 @@
  * @Author: 刘利军
  * @Date: 2021-01-06 17:16:05
  * @LastEditors: 刘利军
- * @LastEditTime: 2021-03-03 20:23:22
+ * @LastEditTime: 2021-03-03 20:50:03
  * @Description:
  * @PageName:
  */
@@ -53,8 +53,15 @@ export default defineConfig({
   routes,
   manifest: {
     basePath: './',
+    // basePath: '/',
   },
+  // publicPath: '/',
+  // base: '/',
   publicPath: './',
   base: './',
-  // exportStatic: {},
+  runtimePublicPath: true,
+  exportStatic: {
+    // htmlSuffix: true,
+    dynamicRoot: true,
+  },
 });
