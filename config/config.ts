@@ -2,7 +2,7 @@
  * @Author: 刘利军
  * @Date: 2021-01-06 17:16:05
  * @LastEditors: 刘利军
- * @LastEditTime: 2021-03-03 20:59:22
+ * @LastEditTime: 2021-03-03 21:03:17
  * @Description:
  * @PageName:
  */
@@ -60,8 +60,8 @@ export default defineConfig({
   publicPath: './',
   base: './',
   // runtimePublicPath: true,
-  // exportStatic: {
-  // htmlSuffix: true,
-  //   dynamicRoot: true,
-  // },
+  exportStatic: {
+    htmlSuffix: true,
+    dynamicRoot: true,
+  },
 });
